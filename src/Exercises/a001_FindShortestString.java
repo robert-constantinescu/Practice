@@ -13,7 +13,6 @@ public class a001_FindShortestString {
     public static int findShort(String phrase) {
         String[] arr = phrase.split(" ");
         int min = -1;
-
         for (String x: arr) {
             if (min == -1) {
                 min = x.length();

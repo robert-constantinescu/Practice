@@ -21,7 +21,6 @@ public class a004_DeadFish {
      */
 
     public static void main(String[] args) {
-
         String commands = "iiisdoso";
         int[] result =  parse(commands);
         System.out.println(Arrays.toString(result));
@@ -30,7 +29,6 @@ public class a004_DeadFish {
     public static int[] parse(String data) {
         int fish = 0;
         List<Integer> output = new ArrayList<>();
-
         for (char c: data.toCharArray()) {
             switch (c) {
                 case 'i': fish += 1; break;
