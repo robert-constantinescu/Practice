@@ -65,7 +65,7 @@ public class a005_GreedIsGood {
     }
 
 
-    static HashMap<Integer,Integer> countDices(int[] dice) {
+    private static HashMap<Integer,Integer> countDices(int[] dice) {
         HashMap<Integer, Integer> valuesCount = new HashMap<>();
 
         for (int d: dice) {
