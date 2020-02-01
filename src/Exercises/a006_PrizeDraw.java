@@ -1,5 +1,6 @@
 package Exercises;
 
+
 import java.util.*;
 
 public class a006_PrizeDraw {
@@ -8,16 +9,6 @@ public class a006_PrizeDraw {
     DESCRIPTION OF THE EXERCISE
     https://www.codewars.com/kata/5616868c81a0f281e500005c
      */
-    private static String[] letters = new String[]{"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
-    private static HashMap<String, Integer> letterScore = lettersToRank(letters);
-
-    private static HashMap<String, Integer> lettersToRank(String[] lettersArray) {
-        HashMap<String, Integer> lettersToRankMap = new HashMap<>();
-        for(int i = 0; i <lettersArray.length; i++) {
-            lettersToRankMap.put(lettersArray[i], i+1);
-        }
-        return lettersToRankMap;
-    }
 
     public static void main(String[] args) {
         int Paul = calculateNameScore("Paul") * 2;
@@ -42,6 +33,19 @@ public class a006_PrizeDraw {
         theWinner = nthRank(st, we, 4);
         System.out.println(theWinner);
     }
+
+
+    private static String[] letters = new String[]{"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+    private static HashMap<String, Integer> letterScore = lettersToRank(letters);
+
+    private static HashMap<String, Integer> lettersToRank(String[] lettersArray) {
+        HashMap<String, Integer> lettersToRankMap = new HashMap<>();
+        for(int i = 0; i <lettersArray.length; i++) {
+            lettersToRankMap.put(lettersArray[i], i+1);
+        }
+        return lettersToRankMap;
+    }
+
 
     public static String nthRank(String st, Integer[] we, int n) {
         if (st.isEmpty()) { return "No Participants"; }
