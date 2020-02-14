@@ -14,7 +14,7 @@ public class LargestProductInAGrid {
 
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
         String file = console.readLine();
-        file = "C:\\Users\\rconstan\\Desktop\\Repositories\\ProjectEulerJava\\src\\P11_LargestProductInAGrid\\theGrid.txt";
+        file = "./ProjectEulerJava/P11_LargestProductInAGrid/theGrid.txt";
 
 
         ArrayList<List<String>> gridRows = convertRowsToList(file);
