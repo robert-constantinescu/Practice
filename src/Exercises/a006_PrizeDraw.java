@@ -64,6 +64,7 @@ public class a006_PrizeDraw {
         }
     }
 
+
     private static int calculateNameScore(String name) {
         String[] letters = name.split("");
         int sum = 0;
