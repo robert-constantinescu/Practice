@@ -1,0 +1,6 @@
+https://httpstat.us/500?sleep=5000
+https://www.emag.ro
+https://www.digi24.ro
+https://stackoverflow.com
+https://chercher.tech
+https://www.infoacademy.net
