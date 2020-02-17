@@ -1,4 +1,4 @@
-package UsingHttpClient;
+package Java.UsingHttpClient;
 
 import java.io.IOException;
 import java.net.URI;
