@@ -23,6 +23,8 @@ public class ImplementPredicate {
         Predicate<String> p3 = p1.and(p2);
         Predicate<String> p4 = p1.or(p2);
 
+        Predicate<String> p5 = Predicate.isEqualTo("Yes");
+
     }
 
 }
