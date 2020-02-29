@@ -1,0 +1,25 @@
+
+
+
+// a lambda expression is an instance of a functional interface
+// at this point, a *functional interface* is an interface with only one method
+
+A functional interface is an interface
+    - With only one abstract method
+    - Default methods do not count( because they are not abstract)
+    - Static methods do not count
+    - Methods from the Object class do not count
+
+A functional interface may be annotated with @FunctionalInterface
+    - it is not mandatory, for legacy reasons
+    - if the functional interface is annotated, the compiler will tell if the interface is functional or not
+
+The java.util.function package
+    - a new package from java 8 with the most useful functional interfaces
+    - 43 functional interfaces
+    - divided in 4 categories:
+                1) Consumer
+                2) Supplier
+                3) Function
+                4) Predicate
+                There are also interfaces written in the package for the primitives (e.g IntFunction)
