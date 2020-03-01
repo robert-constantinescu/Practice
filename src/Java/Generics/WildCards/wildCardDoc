@@ -1,0 +1,22 @@
+
+
+? - is the wildcard
+
+Upper Bounded: List<? extends Cls>  :
+        - lets you give to the list any type that is a subtype of "Cls" (any child class of "Cls")
+        Another example for upper bound:
+             public <T extends Person> void method(final List<T> persons) {...};
+                    similar with:
+             public void method(final List<? extends Person> persons> {...};
+
+
+Lower Bounded: List<? super Cls>
+         - lets you give to the List anythings of type "Cls" or anything that's a parent of "Cls"
+
+
+Unbounded: List<?>
+                equivalent with
+           List<? extends Object>
+           - it is not equivalent with List<Object>.
+           - basically List<?> says that it could be any class, i just don't know which now
+           - need to do further investigation about this
