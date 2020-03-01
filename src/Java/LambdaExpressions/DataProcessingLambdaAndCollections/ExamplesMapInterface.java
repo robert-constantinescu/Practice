@@ -63,11 +63,13 @@ public class ExamplesMapInterface {
         Map<String, List<Person>> map2 = new HashMap<>();
 
         map2.forEach((key1, value1) ->
-                                        //existingPeople and newPeople, are basically 2 lists, and we used de .addAll() method to add the newPeople to the existingPeople
-                map1.merge(key1, value1, (existingPeople, newPeople) -> {
-                    existingPeople.addAll(newPeople);
-                    return existingPeople;
-                }
+
+                map1.merge(key1,
+                            value1,
+                            //below is the BiFunction, we take 2 arguments(2 Lists) and return 1 argument(1 list, formed by the merging of the existingPeople and newPeople
+                            //existingPeople and newPeople, are basically 2 lists, and we used de .addAll() method to add the newPeople to the existingPeople
+                            (existingPeople, newPeople) -> {existingPeople.addAll(newPeople);
+                                                                                return existingPeople; }
             )
         );
 
