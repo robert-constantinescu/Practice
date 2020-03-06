@@ -95,7 +95,7 @@ Stream API Improvements:
         - Improved try-with-resource
         - Better generic type inference for anonymous classes
         - Private interface methods
-                - private methods can be used within the body of default methods
+                - 'private methods can be used within the body of default methods
 
         Improved try-with-resource
             public void doWithFile(FileInputStream fis) throws IOException{
