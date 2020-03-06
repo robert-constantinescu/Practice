@@ -73,10 +73,6 @@ public class MatchCountFindReduce {
                                 .map(p -> p.getAge())
                                 .reduce((p1, p2) -> Integer.max(p1, p2));
 
-
-
-
-
     }
 
 
