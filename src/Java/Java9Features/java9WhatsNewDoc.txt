@@ -107,6 +107,20 @@ Stream API Improvements:
                 }
             }
 
+========================================================================================================================
+
+    StackWalker is an api that allows you write code that inspect the stack.
+
+types:
+    StackWalker      |              StackFrame
+        walk()       |  stream of       getMethodName()
+        forEach()    |------------->    getDeclaringClass()
+                                        getLineNumber()
+                                        getByteCodeIndex()
+                                            . . .
+e.g.:
+        StackWalker walker = StackWalker.getInstance();
+        walker.forEach(System.out::println)
 
 
 
